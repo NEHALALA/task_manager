@@ -15,7 +15,7 @@ class TaskTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      final isDarkMode = ref.watch(themeProvider);
-    return ListTile(
+    return  ListTile(
       title: Text(
         task.title,
         style: TextStyle(

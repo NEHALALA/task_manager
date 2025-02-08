@@ -23,11 +23,11 @@ class TaskList extends ConsumerWidget {
            Text("Pending Tasks",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500,color:  isDarkMode?  AppColors.whiteColor : AppColors.blackColor )),
           Expanded(
-            child: ListView.builder(
+            child: pendingTasks.isEmpty ? Center(child: Text("No Task Added", style: TextStyle(color: isDarkMode ? AppColors.whiteColor :AppColors.blackColor),),): ListView.builder(
               itemCount: pendingTasks.length,
               itemBuilder: (context, index) {
                 final task = pendingTasks[index];
-                return TaskTile(task: task, ref: ref);
+                return  TaskTile(task: task, ref: ref);
               },
             ),
           ),
@@ -35,7 +35,7 @@ class TaskList extends ConsumerWidget {
            Text("Completed Tasks",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500,color:  isDarkMode?  AppColors.whiteColor : AppColors.blackColor )),
           Expanded(
-            child: ListView.builder(
+            child:completedTasks.isEmpty ? Center(child: Text("No Completed Task",style: TextStyle(color: isDarkMode ? AppColors.whiteColor :AppColors.blackColor),),) : ListView.builder(
               itemCount: completedTasks.length,
               itemBuilder: (context, index) {
                 final task = completedTasks[index];
