@@ -9,5 +9,5 @@ Features
 ✅ SQLite Integration - Storing and managing tasks locally.
 ✅ Hive for User Preferences - Saving theme selection and other settings.
 ✅ Light & Dark Mode - Toggle between themes using a fancy sun/moon switch.
-✅ Local Notifications - Reminders and alerts for task deadlines.
+✅ Local Notifications - add Notification when user add new task.
 ✅ Responsive UI - Works on both mobile and tablet screens.
